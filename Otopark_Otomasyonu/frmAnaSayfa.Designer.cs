@@ -86,7 +86,7 @@ namespace Otopark_Otomasyonu
             this.Controls.Add(this.btnAracOtoparkYerleri);
             this.Controls.Add(this.btnAracOtoparkKayit);
             this.Name = "frmAnaSayfa";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Otopark Otamasyonu Ana Sayfa";
             this.ResumeLayout(false);
 
