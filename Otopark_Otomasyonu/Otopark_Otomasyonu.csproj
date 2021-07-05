@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmAnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmAnaSayfa.Designer.cs">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracOtoparkKaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracOtoparkKaydi.Designer.cs">
+      <DependentUpon>frmAracOtoparkKaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracOtoparkYerleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracOtoparkYerleri.Designer.cs">
+      <DependentUpon>frmAracOtoparkYerleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracOtoparkCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracOtoparkCikis.Designer.cs">
+      <DependentUpon>frmAracOtoparkCikis.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAnaSayfa.resx">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
