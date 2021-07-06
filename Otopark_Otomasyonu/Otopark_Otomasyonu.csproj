@@ -88,6 +88,9 @@
     <EmbeddedResource Include="frmAnaSayfa.resx">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAracOtoparkCikis.resx">
+      <DependentUpon>frmAracOtoparkCikis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAracOtoparkKaydi.resx">
       <DependentUpon>frmAracOtoparkKaydi.cs</DependentUpon>
     </EmbeddedResource>

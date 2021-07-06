@@ -16,5 +16,10 @@ namespace Otopark_Otomasyonu
         {
             InitializeComponent();
         }
+
+        private void btnIptal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
