@@ -35,7 +35,7 @@ namespace Otopark_Otomasyonu
                     {
                         if (item.Text == read["parkyeri"].ToString()) //eğer veri tabanındaki kayıt ile eşleşiyorsa item 
                         {
-                            item.Text = read["parkyeri"].ToString(); //plakayı yaz
+                            item.Text = read["plaka"].ToString(); //plakayı yaz
                         }
 
                     }
