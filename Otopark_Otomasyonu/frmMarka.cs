@@ -28,6 +28,9 @@ namespace Otopark_Otomasyonu
             bgl.baglanti().Close();
             MessageBox.Show("Marka Başarıyla Eklendi");
             txtMarka.Clear();
+
+            //frmAracOtoparkKaydi aracKaydi = new frmAracOtoparkKaydi();
+            //aracKaydi.markaGetir();
         }
     }
 }

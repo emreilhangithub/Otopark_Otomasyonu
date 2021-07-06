@@ -98,7 +98,7 @@ namespace Otopark_Otomasyonu
             komut.Parameters.AddWithValue("@plaka", txtPlaka.Text);
             komut.ExecuteNonQuery();
 
-            SqlCommand komut2 = new SqlCommand("update Tbl_Otopark_Durumu set durumu='BOS' where parkyeri=@parkyeri", bgl.baglanti());
+            SqlCommand komut2 = new SqlCommand("update Tbl_Otopark_Durumu set durumu='BOŞ' where parkyeri=@parkyeri", bgl.baglanti());
             komut2.Parameters.AddWithValue("@parkyeri", txtParkYeri2.Text);
             komut2.ExecuteNonQuery();
 
@@ -110,6 +110,9 @@ namespace Otopark_Otomasyonu
             komut3.Parameters.AddWithValue("@sure", double.Parse(lblSure.Text));
             komut3.Parameters.AddWithValue("@tutar", double.Parse(lblToplamTutar.Text));
             komut3.ExecuteNonQuery();
+
+            frmAracOtoparkKaydi frmKayit = new frmAracOtoparkKaydi();
+            frmKayit.bosAraclar();
 
             bgl.baglanti().Close();
 

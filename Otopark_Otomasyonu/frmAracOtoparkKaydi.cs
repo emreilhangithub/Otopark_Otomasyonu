@@ -29,6 +29,7 @@ namespace Otopark_Otomasyonu
 
         private void markaGetir()
         {
+            cmbMarka.Items.Clear();
             SqlCommand komut = new SqlCommand("Select marka from Tbl_Markalar", bgl.baglanti());
             SqlDataReader read = komut.ExecuteReader();
             while (read.Read()) //Kayıtlar okundugu sürece bu işlemi yap
@@ -37,8 +38,9 @@ namespace Otopark_Otomasyonu
             }
         }
 
-        private void bosAraclar()
+        public void bosAraclar()
         {
+            cmbParkYeri.Items.Clear();
             SqlCommand komut = new SqlCommand("Select * from Tbl_Otopark_Durumu where durumu='BOŞ'", bgl.baglanti());
             SqlDataReader read = komut.ExecuteReader();
             while (read.Read()) //Kayıtlar okundugu sürece bu işlemi yap
@@ -75,9 +77,8 @@ namespace Otopark_Otomasyonu
 
             bgl.baglanti().Close(); 
             MessageBox.Show("Personel Başarıyla Eklendi");
-            cmbParkYeri.Items.Clear();
+            //cmbParkYeri.Items.Clear();
             bosAraclar();
-            cmbMarka.Items.Clear();
             markaGetir();
             cmbSeri.Items.Clear();
 
@@ -111,6 +112,7 @@ namespace Otopark_Otomasyonu
         {
             frmMarka marka = new frmMarka();
             marka.ShowDialog();
+            markaGetir();//bunu yazmak zorundayız
         }
 
         private void btnSeri_Click(object sender, EventArgs e)
