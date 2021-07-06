@@ -76,6 +76,12 @@
     <Compile Include="frmMarka.Designer.cs">
       <DependentUpon>frmMarka.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOtoparkCikisYapmisAraclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtoparkCikisYapmisAraclar.Designer.cs">
+      <DependentUpon>frmOtoparkCikisYapmisAraclar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSeri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMarka.resx">
       <DependentUpon>frmMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtoparkCikisYapmisAraclar.resx">
+      <DependentUpon>frmOtoparkCikisYapmisAraclar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeri.resx">
       <DependentUpon>frmSeri.cs</DependentUpon>

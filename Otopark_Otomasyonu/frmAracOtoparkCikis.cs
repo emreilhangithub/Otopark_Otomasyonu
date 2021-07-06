@@ -101,7 +101,21 @@ namespace Otopark_Otomasyonu
             SqlCommand komut2 = new SqlCommand("update Tbl_Otopark_Durumu set durumu='BOS' where parkyeri=@parkyeri", bgl.baglanti());
             komut2.Parameters.AddWithValue("@parkyeri", txtParkYeri2.Text);
             komut2.ExecuteNonQuery();
+
+            SqlCommand komut3 = new SqlCommand("insert into Tbl_Cikislar (parkyeri,plaka,gelis_tarihi,cikis_tarihi,sure,tutar) values(@parkyeri,@plaka,@gelis_tarihi,@cikis_tarihi,@sure,@tutar) ", bgl.baglanti());
+            komut3.Parameters.AddWithValue("@parkyeri", txtParkYeri2.Text);
+            komut3.Parameters.AddWithValue("@plaka", txtPlaka.Text);
+            komut3.Parameters.AddWithValue("@gelis_tarihi", lblGelisTarihi.Text);
+            komut3.Parameters.AddWithValue("@cikis_tarihi", lblCikisTarihi.Text);
+            komut3.Parameters.AddWithValue("@sure", double.Parse(lblSure.Text));
+            komut3.Parameters.AddWithValue("@tutar", double.Parse(lblToplamTutar.Text));
+            komut3.ExecuteNonQuery();
+
+            bgl.baglanti().Close();
+
             MessageBox.Show("Araç Çıkışı yapıldı");
+
+
 
             foreach (Control item in grpAracBilgileri.Controls)
             {

@@ -36,8 +36,14 @@ namespace Otopark_Otomasyonu
 
         private void btnAracOtoparkCikis_Click(object sender, EventArgs e)
         {
-            frmAracOtoparkCikis kayit = new frmAracOtoparkCikis();
-            kayit.ShowDialog();
+            frmAracOtoparkCikis cikis = new frmAracOtoparkCikis();
+            cikis.ShowDialog();
+        }
+
+        private void btnOtoparkCikisYapmisAraclar_Click(object sender, EventArgs e)
+        {
+            frmOtoparkCikisYapmisAraclar cikisYapmisAraclar = new frmOtoparkCikisYapmisAraclar();
+            cikisYapmisAraclar.ShowDialog();
         }
     }
 }

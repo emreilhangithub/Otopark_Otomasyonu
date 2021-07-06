@@ -33,6 +33,7 @@ namespace Otopark_Otomasyonu
             this.btnAracOtoparkYerleri = new System.Windows.Forms.Button();
             this.btnAracOtoparkCikis = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnOtoparkCikisYapmisAraclar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAracOtoparkKayit
@@ -61,13 +62,13 @@ namespace Otopark_Otomasyonu
             this.btnAracOtoparkCikis.Name = "btnAracOtoparkCikis";
             this.btnAracOtoparkCikis.Size = new System.Drawing.Size(360, 23);
             this.btnAracOtoparkCikis.TabIndex = 2;
-            this.btnAracOtoparkCikis.Text = "Araça Otapark Çıkış Sayfası";
+            this.btnAracOtoparkCikis.Text = "Araç Otapark Çıkış Sayfası";
             this.btnAracOtoparkCikis.UseVisualStyleBackColor = true;
             this.btnAracOtoparkCikis.Click += new System.EventHandler(this.btnAracOtoparkCikis_Click);
             // 
             // btnCikis
             // 
-            this.btnCikis.Location = new System.Drawing.Point(64, 109);
+            this.btnCikis.Location = new System.Drawing.Point(64, 142);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(360, 23);
             this.btnCikis.TabIndex = 3;
@@ -75,12 +76,23 @@ namespace Otopark_Otomasyonu
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // btnOtoparkCikisYapmisAraclar
+            // 
+            this.btnOtoparkCikisYapmisAraclar.Location = new System.Drawing.Point(64, 113);
+            this.btnOtoparkCikisYapmisAraclar.Name = "btnOtoparkCikisYapmisAraclar";
+            this.btnOtoparkCikisYapmisAraclar.Size = new System.Drawing.Size(360, 23);
+            this.btnOtoparkCikisYapmisAraclar.TabIndex = 4;
+            this.btnOtoparkCikisYapmisAraclar.Text = "Otopark Çıkış Yapmış Araçlar";
+            this.btnOtoparkCikisYapmisAraclar.UseVisualStyleBackColor = true;
+            this.btnOtoparkCikisYapmisAraclar.Click += new System.EventHandler(this.btnOtoparkCikisYapmisAraclar_Click);
+            // 
             // frmAnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(524, 163);
+            this.ClientSize = new System.Drawing.Size(466, 193);
+            this.Controls.Add(this.btnOtoparkCikisYapmisAraclar);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnAracOtoparkCikis);
             this.Controls.Add(this.btnAracOtoparkYerleri);
@@ -98,6 +110,7 @@ namespace Otopark_Otomasyonu
         private System.Windows.Forms.Button btnAracOtoparkYerleri;
         private System.Windows.Forms.Button btnAracOtoparkCikis;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Button btnOtoparkCikisYapmisAraclar;
     }
 }
 
