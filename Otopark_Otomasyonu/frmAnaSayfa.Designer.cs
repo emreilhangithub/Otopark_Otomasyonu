@@ -44,7 +44,7 @@ namespace Otopark_Otomasyonu
             this.btnAracOtoparkKayit.Name = "btnAracOtoparkKayit";
             this.btnAracOtoparkKayit.Size = new System.Drawing.Size(540, 35);
             this.btnAracOtoparkKayit.TabIndex = 0;
-            this.btnAracOtoparkKayit.Text = "Araç Otapark Kaydı Sayfası";
+            this.btnAracOtoparkKayit.Text = "Araç Otopark Kaydı Sayfası";
             this.btnAracOtoparkKayit.UseVisualStyleBackColor = true;
             this.btnAracOtoparkKayit.Click += new System.EventHandler(this.btnAracOtoparkKayit_Click);
             // 
@@ -55,7 +55,7 @@ namespace Otopark_Otomasyonu
             this.btnAracOtoparkYerleri.Name = "btnAracOtoparkYerleri";
             this.btnAracOtoparkYerleri.Size = new System.Drawing.Size(540, 35);
             this.btnAracOtoparkYerleri.TabIndex = 1;
-            this.btnAracOtoparkYerleri.Text = "Araç Otapark Yerleri";
+            this.btnAracOtoparkYerleri.Text = "Araç Otopark Yerleri";
             this.btnAracOtoparkYerleri.UseVisualStyleBackColor = true;
             this.btnAracOtoparkYerleri.Click += new System.EventHandler(this.btnAracOtoparkYerleri_Click);
             // 
@@ -66,7 +66,7 @@ namespace Otopark_Otomasyonu
             this.btnAracOtoparkCikis.Name = "btnAracOtoparkCikis";
             this.btnAracOtoparkCikis.Size = new System.Drawing.Size(540, 35);
             this.btnAracOtoparkCikis.TabIndex = 2;
-            this.btnAracOtoparkCikis.Text = "Araç Otapark Çıkış Sayfası";
+            this.btnAracOtoparkCikis.Text = "Araç Otopark Çıkış Sayfası";
             this.btnAracOtoparkCikis.UseVisualStyleBackColor = true;
             this.btnAracOtoparkCikis.Click += new System.EventHandler(this.btnAracOtoparkCikis_Click);
             // 
@@ -107,7 +107,7 @@ namespace Otopark_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAnaSayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Otopark Otamasyonu Ana Sayfa";
+            this.Text = " Otopark Otomasyonu Ana Sayfa";
             this.ResumeLayout(false);
 
         }
