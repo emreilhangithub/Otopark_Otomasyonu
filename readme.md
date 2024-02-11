@@ -29,12 +29,14 @@ Eğer dolu ise dolu olan yerin örnek P-1 alanı için textbox kırmızı yapar 
 
 
 2)Marka kısmında daha önce kayıtlı markaları getiriyor.
+
 ![MarkaListesi](https://github.com/emreilhangithub/Otopark_Otomasyonu/blob/master/images/MarkaListesi.png)
 
 Eğer marka ekleme istiyorsanız + butonuna basıp sizi karşılayacak ekrandan ekle butonuna basabilirsiniz.
 ![MarkaEkle](https://github.com/emreilhangithub/Otopark_Otomasyonu/blob/master/images/MarkaEkle.png)
 
 3)Seri kısmında daha önce kayıtlı markaya ait serileri getiriyor.
+
 ![SeriListesi](https://github.com/emreilhangithub/Otopark_Otomasyonu/blob/master/images/SeriListesi.png)
 
 Eğer seri ekleme istiyorsanız + butonuna basıp sizi karşılayacak ekrandan markasını ekleyeceğiniz seri adını yazarak ekle butonuna basabilirsiniz.
