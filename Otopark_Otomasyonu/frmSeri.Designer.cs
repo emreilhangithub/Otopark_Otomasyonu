@@ -29,6 +29,7 @@ namespace Otopark_Otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSeri));
             this.label1 = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
             this.txtSeri = new System.Windows.Forms.TextBox();
@@ -39,17 +40,19 @@ namespace Otopark_Otomasyonu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 58);
+            this.label1.Location = new System.Drawing.Point(66, 89);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 13);
+            this.label1.Size = new System.Drawing.Size(37, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Seri";
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(159, 102);
+            this.btnEkle.Location = new System.Drawing.Point(238, 157);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(75, 23);
+            this.btnEkle.Size = new System.Drawing.Size(112, 35);
             this.btnEkle.TabIndex = 4;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -57,40 +60,45 @@ namespace Otopark_Otomasyonu
             // 
             // txtSeri
             // 
-            this.txtSeri.Location = new System.Drawing.Point(134, 58);
+            this.txtSeri.Location = new System.Drawing.Point(201, 89);
+            this.txtSeri.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSeri.Name = "txtSeri";
-            this.txtSeri.Size = new System.Drawing.Size(100, 20);
+            this.txtSeri.Size = new System.Drawing.Size(148, 26);
             this.txtSeri.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 28);
+            this.label2.Location = new System.Drawing.Point(66, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Marka";
             // 
             // cmbMarka
             // 
             this.cmbMarka.FormattingEnabled = true;
-            this.cmbMarka.Location = new System.Drawing.Point(134, 25);
+            this.cmbMarka.Location = new System.Drawing.Point(201, 38);
+            this.cmbMarka.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbMarka.Name = "cmbMarka";
-            this.cmbMarka.Size = new System.Drawing.Size(100, 21);
+            this.cmbMarka.Size = new System.Drawing.Size(148, 28);
             this.cmbMarka.TabIndex = 7;
             this.cmbMarka.SelectedIndexChanged += new System.EventHandler(this.cmbMarka_SelectedIndexChanged);
             // 
             // frmSeri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(290, 188);
+            this.ClientSize = new System.Drawing.Size(435, 289);
             this.Controls.Add(this.cmbMarka);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.txtSeri);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSeri";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seri";

@@ -29,6 +29,7 @@ namespace Otopark_Otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAnaSayfa));
             this.btnAracOtoparkKayit = new System.Windows.Forms.Button();
             this.btnAracOtoparkYerleri = new System.Windows.Forms.Button();
             this.btnAracOtoparkCikis = new System.Windows.Forms.Button();
@@ -38,9 +39,10 @@ namespace Otopark_Otomasyonu
             // 
             // btnAracOtoparkKayit
             // 
-            this.btnAracOtoparkKayit.Location = new System.Drawing.Point(64, 22);
+            this.btnAracOtoparkKayit.Location = new System.Drawing.Point(96, 34);
+            this.btnAracOtoparkKayit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAracOtoparkKayit.Name = "btnAracOtoparkKayit";
-            this.btnAracOtoparkKayit.Size = new System.Drawing.Size(360, 23);
+            this.btnAracOtoparkKayit.Size = new System.Drawing.Size(540, 35);
             this.btnAracOtoparkKayit.TabIndex = 0;
             this.btnAracOtoparkKayit.Text = "Araç Otapark Kaydı Sayfası";
             this.btnAracOtoparkKayit.UseVisualStyleBackColor = true;
@@ -48,9 +50,10 @@ namespace Otopark_Otomasyonu
             // 
             // btnAracOtoparkYerleri
             // 
-            this.btnAracOtoparkYerleri.Location = new System.Drawing.Point(64, 51);
+            this.btnAracOtoparkYerleri.Location = new System.Drawing.Point(96, 78);
+            this.btnAracOtoparkYerleri.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAracOtoparkYerleri.Name = "btnAracOtoparkYerleri";
-            this.btnAracOtoparkYerleri.Size = new System.Drawing.Size(360, 23);
+            this.btnAracOtoparkYerleri.Size = new System.Drawing.Size(540, 35);
             this.btnAracOtoparkYerleri.TabIndex = 1;
             this.btnAracOtoparkYerleri.Text = "Araç Otapark Yerleri";
             this.btnAracOtoparkYerleri.UseVisualStyleBackColor = true;
@@ -58,9 +61,10 @@ namespace Otopark_Otomasyonu
             // 
             // btnAracOtoparkCikis
             // 
-            this.btnAracOtoparkCikis.Location = new System.Drawing.Point(64, 80);
+            this.btnAracOtoparkCikis.Location = new System.Drawing.Point(96, 123);
+            this.btnAracOtoparkCikis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAracOtoparkCikis.Name = "btnAracOtoparkCikis";
-            this.btnAracOtoparkCikis.Size = new System.Drawing.Size(360, 23);
+            this.btnAracOtoparkCikis.Size = new System.Drawing.Size(540, 35);
             this.btnAracOtoparkCikis.TabIndex = 2;
             this.btnAracOtoparkCikis.Text = "Araç Otapark Çıkış Sayfası";
             this.btnAracOtoparkCikis.UseVisualStyleBackColor = true;
@@ -68,9 +72,10 @@ namespace Otopark_Otomasyonu
             // 
             // btnCikis
             // 
-            this.btnCikis.Location = new System.Drawing.Point(64, 142);
+            this.btnCikis.Location = new System.Drawing.Point(96, 218);
+            this.btnCikis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(360, 23);
+            this.btnCikis.Size = new System.Drawing.Size(540, 35);
             this.btnCikis.TabIndex = 3;
             this.btnCikis.Text = "Çıkış";
             this.btnCikis.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@ namespace Otopark_Otomasyonu
             // 
             // btnOtoparkCikisYapmisAraclar
             // 
-            this.btnOtoparkCikisYapmisAraclar.Location = new System.Drawing.Point(64, 113);
+            this.btnOtoparkCikisYapmisAraclar.Location = new System.Drawing.Point(96, 174);
+            this.btnOtoparkCikisYapmisAraclar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOtoparkCikisYapmisAraclar.Name = "btnOtoparkCikisYapmisAraclar";
-            this.btnOtoparkCikisYapmisAraclar.Size = new System.Drawing.Size(360, 23);
+            this.btnOtoparkCikisYapmisAraclar.Size = new System.Drawing.Size(540, 35);
             this.btnOtoparkCikisYapmisAraclar.TabIndex = 4;
             this.btnOtoparkCikisYapmisAraclar.Text = "Otopark Çıkış Yapmış Araçlar";
             this.btnOtoparkCikisYapmisAraclar.UseVisualStyleBackColor = true;
@@ -88,15 +94,17 @@ namespace Otopark_Otomasyonu
             // 
             // frmAnaSayfa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(466, 193);
+            this.ClientSize = new System.Drawing.Size(699, 297);
             this.Controls.Add(this.btnOtoparkCikisYapmisAraclar);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnAracOtoparkCikis);
             this.Controls.Add(this.btnAracOtoparkYerleri);
             this.Controls.Add(this.btnAracOtoparkKayit);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAnaSayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Otopark Otamasyonu Ana Sayfa";

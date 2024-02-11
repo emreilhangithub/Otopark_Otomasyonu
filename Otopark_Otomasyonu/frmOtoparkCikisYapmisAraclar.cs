@@ -27,19 +27,33 @@ namespace Otopark_Otomasyonu
         }
 
         private void hesapla()
-        {
-            SqlCommand komut = new SqlCommand("Select sum(tutar) from Tbl_Cikislar", bgl.baglanti());
-            lblToplamTutar.Text = "Toplam Tutar = " + komut.ExecuteScalar() + "TL";
-            bgl.baglanti().Close();
+        {         
+            try
+            {
+                SqlCommand komut = new SqlCommand("Select sum(tutar) from Tbl_Cikislar", bgl.baglanti());
+                lblToplamTutar.Text = "Toplam Tutar = " + komut.ExecuteScalar() + "TL";
+                bgl.baglanti().Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
         }
 
         private void satisListesi()
-        {
-            DataTable dt = new DataTable();
-            SqlDataAdapter adtr = new SqlDataAdapter("select * from Tbl_Cikislar", bgl.baglanti());
-            adtr.Fill(dt);
-            dataGridView1.DataSource = dt;
-            bgl.baglanti().Close();
+        {           
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter adtr = new SqlDataAdapter("select * from Tbl_Cikislar", bgl.baglanti());
+                adtr.Fill(dt);
+                dataGridView1.DataSource = dt;
+                bgl.baglanti().Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }
         }
     }
 }

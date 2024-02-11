@@ -22,12 +22,19 @@ namespace Otopark_Otomasyonu
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            SqlCommand kayitkomutu = new SqlCommand("insert into Tbl_Markalar (marka) values(@marka)", bgl.baglanti());
-            kayitkomutu.Parameters.AddWithValue("@marka", txtMarka.Text);
-            kayitkomutu.ExecuteNonQuery();
-            bgl.baglanti().Close();
-            MessageBox.Show("Marka Başarıyla Eklendi");
-            txtMarka.Clear();
+            try
+            {
+                SqlCommand kayitkomutu = new SqlCommand("insert into Tbl_Markalar (marka) values(@marka)", bgl.baglanti());
+                kayitkomutu.Parameters.AddWithValue("@marka", txtMarka.Text);
+                kayitkomutu.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Marka Başarıyla Eklendi");
+                txtMarka.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }         
 
             //frmAracOtoparkKaydi aracKaydi = new frmAracOtoparkKaydi();
             //aracKaydi.markaGetir();

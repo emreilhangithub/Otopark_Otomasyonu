@@ -22,16 +22,23 @@ namespace Otopark_Otomasyonu
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            SqlCommand kayitkomutu = new SqlCommand("insert into Tbl_Seriler (marka,seri) values(@marka,@seri)", bgl.baglanti());
-            kayitkomutu.Parameters.AddWithValue("@seri", txtSeri.Text);
-            kayitkomutu.Parameters.AddWithValue("@marka", cmbMarka.Text);
-            kayitkomutu.ExecuteNonQuery();
-            bgl.baglanti().Close();
-            MessageBox.Show("Markaya baglı araç serisi eklendi");
-            txtSeri.Clear();
-            cmbMarka.Text = "";
-            cmbMarka.Items.Clear();
-            marka();
+            try
+            {
+                SqlCommand kayitkomutu = new SqlCommand("insert into Tbl_Seriler (marka,seri) values(@marka,@seri)", bgl.baglanti());
+                kayitkomutu.Parameters.AddWithValue("@seri", txtSeri.Text);
+                kayitkomutu.Parameters.AddWithValue("@marka", cmbMarka.Text);
+                kayitkomutu.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Markaya baglı araç serisi eklendi");
+                txtSeri.Clear();
+                cmbMarka.Text = "";
+                cmbMarka.Items.Clear();
+                marka();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }            
         }
 
         private void cmbMarka_SelectedIndexChanged(object sender, EventArgs e)
@@ -51,12 +58,19 @@ namespace Otopark_Otomasyonu
 
         private void marka()
         {
-            SqlCommand komut = new SqlCommand("Select marka from Tbl_Markalar", bgl.baglanti());
-            SqlDataReader read = komut.ExecuteReader();
-            while (read.Read()) //Kayıtlar okundugu sürece bu işlemi yap
+            try
             {
-                cmbMarka.Items.Add(read["marka"].ToString());
+                SqlCommand komut = new SqlCommand("Select marka from Tbl_Markalar", bgl.baglanti());
+                SqlDataReader read = komut.ExecuteReader();
+                while (read.Read()) //Kayıtlar okundugu sürece bu işlemi yap
+                {
+                    cmbMarka.Items.Add(read["marka"].ToString());
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message);
+            }           
         }
     }
 }
