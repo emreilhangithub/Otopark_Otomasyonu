@@ -49,7 +49,7 @@ Eğer seri ekleme istiyorsanız + butonuna basıp sizi karşılayacak ekrandan m
 Aşşağıdaki ekranda görüldüğü üzere artık kayıt işleminiz tamamlanmıştır. Araç otomapark yerleri ekranından bakabilirsiniz.
 ![AracOtoparkKaydiYapildi](https://github.com/emreilhangithub/Otopark_Otomasyonu/blob/master/images/AracOtoparkKaydiYapildi.png)
 
-### Çıkış Yapmış Araçlar
+### Arac Otopark Çıkışı
 Bu ekranda otoparkdan çıkış yapmak isteyen araca çıkış yaptırılır.
 
 
