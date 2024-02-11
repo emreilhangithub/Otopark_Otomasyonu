@@ -46,7 +46,7 @@ Eğer seri ekleme istiyorsanız + butonuna basıp sizi karşılayacak ekrandan m
 
 4)Kişi bilgileri ve araç bilgilerini doldurduktan sonra kayıt et butonuna basılır.
 
-Aşşağıdaki ekranda görüldüğü üzere artık kayıt işleminiz tamamlanmıştır. Araç otomapark yerleri ekranından bakabilirsiniz.
+Aşşağıdaki ekranda görüldüğü üzere artık kayıt işleminiz tamamlanmıştır. Araç otopark yerleri ekranından bakabilirsiniz.
 ![AracOtoparkKaydiYapildi](https://github.com/emreilhangithub/Otopark_Otomasyonu/blob/master/images/AracOtoparkKaydiYapildi.png)
 
 ### Arac Otopark Çıkışı

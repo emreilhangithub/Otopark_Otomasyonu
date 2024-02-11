@@ -463,7 +463,7 @@ namespace Otopark_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAracOtoparkCikis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Araç Otapark Çıkış";
+            this.Text = "Araç Otopark Çıkış";
             this.Load += new System.EventHandler(this.frmAracOtoparkCikis_Load);
             this.grpPlakaBilgileri.ResumeLayout(false);
             this.grpPlakaBilgileri.PerformLayout();

@@ -198,7 +198,7 @@ namespace Otopark_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAracOtoparkYerleri";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Araç Otapark Yerleri";
+            this.Text = "Araç Otopark Yerleri";
             this.Load += new System.EventHandler(this.frmAracOtoparkYerleri_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

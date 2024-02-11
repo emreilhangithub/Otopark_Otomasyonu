@@ -346,7 +346,7 @@ namespace Otopark_Otomasyonu
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAracOtoparkKaydi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Araç Otapark Kaydi";
+            this.Text = "Araç Otopark Kaydi";
             this.Load += new System.EventHandler(this.frmAracOtoparkKaydi_Load);
             this.grpKisiBilgileri.ResumeLayout(false);
             this.grpKisiBilgileri.PerformLayout();
