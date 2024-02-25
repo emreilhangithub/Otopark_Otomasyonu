@@ -2,10 +2,10 @@
 
 ## Proje Tanıtımı 
 
-*Bu projede **.Net** kullanarak otopark otomasyonu oluşturdum. CRUD operasyonları için ado.net kullanıldım.*
+*Bu projede **.Net** kullanarak otopark otomasyonu oluşturdum. CRUD operasyonları için ado.net kullandım.*
 
 # Database Yedeği #
-Databse kısmına aşşağıdan ulaşıp kendinize yükleyebilirsiniz. https://github.com/emreilhangithub/Otopark_Otomasyonu/tree/master/database
+Database kısmına [buradan](https://github.com/emreilhangithub/Otopark_Otomasyonu/tree/master/database) ulaşıp kendinize yükleyebilirsiniz. 
 
 # Proje İçeriği #
 
